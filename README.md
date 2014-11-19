@@ -1,3 +1,15 @@
-#connect_sdk_bdd
+# Connect SDK BDD Scenarios
 
-BDD Scenarios for the Connect SDK Implementations
+These scenarios define the types of system interactions or behaviors that the sdk should provide
+
+### Authentication
+### Downloads
+### Images
+### ImageSearch
+
+### Countries
+### Collections
+### Usage
+### Embed
+### VideoSearch
+### AssetChanges
