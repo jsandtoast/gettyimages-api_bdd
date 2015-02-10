@@ -94,8 +94,8 @@ And I search for dog
 Then I get a response back that has my images
 Examples:
 | model          |
-| Rights_Managed |
-| Royalty_Free   |
+| RightsManaged |
+| RoyaltyFree   |
 
 Scenario Outline: Search for images specifying orientation
 Given I have an apikey
@@ -127,6 +127,136 @@ Given I have an apikey
 And an apisecret
 When I configure my search for <image family> images
 And I specify age of people
+And I search
+Then I get a response back that has my images
+Examples:
+| image family |
+| blended      |
+| editorial    |
+| creative     |
+
+Scenario Outline: Search for images by an artist
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify an artist
+And I search
+Then I get a response back that has my images
+Examples:
+| image family |
+| blended      |
+| editorial    |
+| creative     |
+
+Scenario Outline: Search for images by collection codes
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify a collection code
+And I search
+Then I get a response back that has my images
+Examples:
+| image family |
+| blended      |
+| editorial    |
+| creative     |
+
+Scenario Outline: Search for images by compositions
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify a composition
+And I search
+Then I get a response back that has my images
+Examples:
+| image family |
+| blended      |
+| editorial    |
+| creative     |
+
+Scenario Outline: Search for images by end date
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify an end date
+And I search
+Then I get a response back that has my images
+Examples:
+| image family |
+| blended      |
+| editorial    |
+| creative     |
+
+Scenario Outline: Search for images by event ids
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify a event ids
+And I search
+Then I get a response back that has my images
+Examples:
+| image family |
+| blended      |
+| editorial    |
+| creative     |
+
+Scenario Outline: Search for images by ethnicity
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify an ethnicity
+And I search
+Then I get a response back that has my images
+Examples:
+| image family |
+| blended      |
+| editorial    |
+| creative     |
+
+Scenario Outline: Search for images by file types
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify a file type
+And I search
+Then I get a response back that has my images
+Examples:
+| image family |
+| blended      |
+| editorial    |
+| creative     |
+
+Scenario Outline: Search for images by keyword ids
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify a keyword id
+And I search
+Then I get a response back that has my images
+Examples:
+| image family |
+| blended      |
+| editorial    |
+| creative     |
+
+Scenario Outline: Search for images by locations
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify a location
+And I search
+Then I get a response back that has my images
+Examples:
+| image family |
+| blended      |
+| editorial    |
+| creative     |
+
+Scenario Outline: Search for images by number of people
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify a number of people
 And I search
 Then I get a response back that has my images
 Examples:
