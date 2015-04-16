@@ -268,6 +268,8 @@ Examples:
 Scenario Outline: Search for images specifying product type
 Given I have an apikey
 And an apisecret
+And a username
+And a password
 When I configure my search for editorial images
 And I specify a <product type> product type
 And I search for dog
