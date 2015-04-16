@@ -264,3 +264,18 @@ Examples:
 | blended      |
 | editorial    |
 | creative     |
+
+Scenario Outline: Search for images specifying product type
+Given I have an apikey
+And an apisecret
+When I configure my search for editorial images
+And I specify a <product type> product type
+And I search for dog
+Then I get a response back that has my images
+Examples:
+| product type            |
+| editorialsubscription   |
+| premiumaccess           |
+| easyaccess              |
+| royaltyfreesubscription |
+| imagepack               |
