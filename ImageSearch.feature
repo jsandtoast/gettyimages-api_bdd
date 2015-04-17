@@ -243,27 +243,28 @@ Scenario Outline: Search for images by locations
 Given I have an apikey
 And an apisecret
 When I configure my search for <image family> images
-And I specify a location
-And I search
+And I specify a location of <value>
+And I search for dog
 Then I get a response back that has my images
 Examples:
-| image family |
-| blended      |
-| editorial    |
-| creative     |
+| image family | value      |
+| blended      | california |
+| editorial    | chicago    |
+| creative     | seattle    |
 
 Scenario Outline: Search for images by number of people
 Given I have an apikey
 And an apisecret
 When I configure my search for <image family> images
-And I specify a number of people
-And I search
+And I specify a <value> number of people in image
+And I search for people
 Then I get a response back that has my images
 Examples:
-| image family |
-| blended      |
-| editorial    |
-| creative     |
+| image family | value |
+| blended      | none  |
+| editorial    | one   |
+| creative     | two   |
+| editorial    | group |
 
 Scenario Outline: Search for images specifying product type
 Given I have an apikey
