@@ -280,3 +280,11 @@ Examples:
 | easyaccess              |
 | royaltyfreesubscription |
 | imagepack               |
+
+Scenario: Search for prestige images
+Given I have an apikey
+And an apisecret
+When I configure my search for creative images
+When I specify I want only prestige images
+And I search for dog
+Then I get a response back that has my images
