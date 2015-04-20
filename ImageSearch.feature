@@ -216,15 +216,16 @@ Examples:
 Scenario Outline: Search for images by file types
 Given I have an apikey
 And an apisecret
-When I configure my search for <image family> images
-And I specify a file type
-And I search
+When I configure my search for blended images
+And I specify a <value> file type
+And I search for people
 Then I get a response back that has my images
 Examples:
-| image family |
-| blended      |
-| editorial    |
-| creative     |
+| value |
+| eps   |
+| gif   |
+| jpg   |
+| png   |
 
 Scenario Outline: Search for images by keyword ids
 Given I have an apikey
