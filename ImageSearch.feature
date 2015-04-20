@@ -191,14 +191,12 @@ Scenario Outline: Search for images by event ids
 Given I have an apikey
 And an apisecret
 When I configure my search for <image family> images
-And I specify a event ids
-And I search
+And I specify a event id
 Then I get a response back that has my images
 Examples:
 | image family |
 | blended      |
 | editorial    |
-| creative     |
 
 Scenario Outline: Search for images by ethnicity
 Given I have an apikey
