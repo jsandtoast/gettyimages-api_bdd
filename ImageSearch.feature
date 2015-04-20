@@ -231,7 +231,6 @@ Given I have an apikey
 And an apisecret
 When I configure my search for <image family> images
 And I specify a keyword id
-And I search
 Then I get a response back that has my images
 Examples:
 | image family |
