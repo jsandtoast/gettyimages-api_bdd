@@ -36,4 +36,4 @@ Scenario: Specify multiple ids in batch image detail request
 	And an apisecret
 	And I have a list of image ids I want details on
 	When I retrieve details for the images
-	Then I get a response back that has my image details
+	Then I get a response back that has details for multiple images
