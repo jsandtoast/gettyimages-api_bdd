@@ -31,13 +31,6 @@ Scenario: Specify fields in image detail request
 	And the response contains caption
 	And the response contains title
 
-Scenario: Client Credentials Single
-	Given I have an apikey
-	And an apisecret
-	And I have an image id I want details on
-	When I retrieve details for the image
-	Then I get a response back that has my image details
-
 Scenario: Specify multiple ids in batch image detail request
 	Given I have an apikey
 	And an apisecret
