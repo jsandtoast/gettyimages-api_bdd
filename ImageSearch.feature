@@ -200,6 +200,20 @@ Examples:
 | editorial    |
 | creative     |
 
+Scenario Outline: Search for images by collection filter type
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify a <code_value> collection code
+And I specify a <filter_value> collection filter type
+And I search for people
+Then I get a response back that has my images
+Examples:
+| image family | code_value | filter_value |
+| blended      | WRI        | include      |
+| editorial    | WRI        | exclude      |
+| creative     | ARF        | include      |
+
 Scenario Outline: Search for images by compositions
 Given I have an apikey
 And an apisecret
