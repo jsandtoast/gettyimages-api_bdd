@@ -204,14 +204,26 @@ Scenario Outline: Search for images by compositions
 Given I have an apikey
 And an apisecret
 When I configure my search for <image family> images
-And I specify a composition
-And I search
+And I specify a <value> composition
+And I search for people
 Then I get a response back that has my images
 Examples:
-| image family |
-| blended      |
-| editorial    |
-| creative     |
+| image family | value                |
+| blended      | abstract             |
+| editorial    | candid               |
+| creative     | close_up             |
+| blended      | copy_space           |
+| editorial    | cut_out              |
+| creative     | full_frame           |
+| blended      | full_length          |
+| editorial    | headshot             |
+| creative     | looking_at_camera    |
+| blended      | macro                |
+| editorial    | portrait             |
+| creative     | sparse               |
+| blended      | still_life           |
+| editorial    | three_quarter_length |
+| creative     | waist_up             |
 
 Scenario Outline: Search for images by end date
 Given I have an apikey
