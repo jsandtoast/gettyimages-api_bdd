@@ -93,7 +93,7 @@ And I specify a license model <model>
 And I search for dog
 Then I get a response back that has my images
 Examples:
-| model          |
+| model         |
 | RightsManaged |
 | RoyaltyFree   |
 
@@ -192,7 +192,7 @@ Given I have an apikey
 And an apisecret
 When I configure my search for <image family> images
 And I specify a collection code
-And I search
+And I search for people
 Then I get a response back that has my images
 Examples:
 | image family |
