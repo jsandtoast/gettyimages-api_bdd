@@ -253,14 +253,24 @@ Scenario Outline: Search for images by ethnicity
 Given I have an apikey
 And an apisecret
 When I configure my search for <image family> images
-And I specify an ethnicity
-And I search
+And I specify an <value> ethnicity
+And I search for people
 Then I get a response back that has my images
 Examples:
-| image family |
-| blended      |
-| editorial    |
-| creative     |
+| image family | value                         |
+| blended      | black                         |
+| editorial    | caucasian                     |
+| creative     | east_asian                    |
+| blended      | hispanic_latino               |
+| editorial    | japanese                      |
+| creative     | middle_eastern                |
+| blended      | mixed_race_person             |
+| editorial    | multiethnic_group             |
+| creative     | native_american_first_nations |
+| blended      | pacific_islander              |
+| editorial    | south_asian                   |
+| creative     | southeast_asian               |
+
 
 Scenario Outline: Search for images by file types
 Given I have an apikey
