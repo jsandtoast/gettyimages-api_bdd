@@ -126,14 +126,53 @@ Scenario Outline: Search for images with age of people
 Given I have an apikey
 And an apisecret
 When I configure my search for <image family> images
-And I specify age of people
-And I search
+And I specify a <value> age of people
+And I search for people
 Then I get a response back that has my images
 Examples:
-| image family |
-| blended      |
-| editorial    |
-| creative     |
+| image family | value         |
+| blended      | newborn       |
+| editorial    | baby          |
+| creative     | child         |
+| blended      | teenager      |
+| editorial    | young_adult   |
+| creative     | adult         |
+| blended      | adults_only   |
+| editorial    | mature_adult  |
+| creative     | senior_adult  |
+| blended      | 0-1_months    |
+| editorial    | 2-5_months    |
+| creative     | 6-11_months   |
+| blended      | 12-17_months  |
+| editorial    | 18-23_months  |
+| creative     | 2-3_years     |
+| blended      | 4-5_years     |
+| editorial    | 6-7_years     |
+| creative     | 8-9_years     |
+| blended      | 10-11_years   |
+| editorial    | 12-13_years   |
+| creative     | 14-15_years   |
+| blended      | 16-17_years   |
+| editorial    | 18-19_years   |
+| creative     | 20-24_years   |
+| blended      | 20-29_years   |
+| editorial    | 25-29_years   |
+| creative     | 30-34_years   |
+| blended      | 30-39_years   |
+| editorial    | 35-39_years   |
+| creative     | 40-44_years   |
+| blended      | 40-49_years   |
+| editorial    | 45-49_years   |
+| creative     | 50-54_years   |
+| blended      | 50-59_years   |
+| editorial    | 55-59_years   |
+| creative     | 60-64_years   |
+| blended      | 60-69_years   |
+| editorial    | 65-69_years   |
+| creative     | 70-79_years   |
+| blended      | 80-89_years   |
+| editorial    | 90_plus_years |
+| creative     | 100_over      |
 
 Scenario Outline: Search for images by an artist
 Given I have an apikey
