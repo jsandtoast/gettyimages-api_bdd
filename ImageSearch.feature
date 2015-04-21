@@ -237,6 +237,18 @@ Examples:
 | blended      |
 | editorial    |
 
+Scenario Outline: Search for images by start date
+Given I have an apikey
+And an apisecret
+When I configure my search for <image family> images
+And I specify an start date
+And I search for dog
+Then I get a response back that has my images
+Examples:
+| image family |
+| blended      |
+| editorial    |
+
 Scenario Outline: Search for images by event ids
 Given I have an apikey
 And an apisecret
