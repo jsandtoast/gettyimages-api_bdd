@@ -51,23 +51,6 @@ When I request for any image to be downloaded
 Then the url for the image is returned
 And the url will return the largest image
 
-Scenario: Download image from specified product type
-Given I have an apikey
-And an apisecret
-And a username
-And a password
-When I request for any image to be downloaded
-And I specify a <product type> product type
-And I specify a product id <value>
-Then the url for the image is returned
-Examples:
-| product type            | value |
-| editorialsubscription   | 0000  |
-| premiumaccess           | 2726  |
-| easyaccess              | 1161  |
-| royaltyfreesubscription | 0001  |
-| imagepack               | 0002  |
-
 Scenario: Download image  
 Given I have an apikey
 And an apisecret
