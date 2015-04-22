@@ -23,8 +23,8 @@ Given I have an apikey
 And an apisecret
 And a username
 And a password
-When I request for any image to be downloaded
 And I specify <value> file type
+When I request for any image to be downloaded
 Then the url for the image is returned
 Examples:
 | value |
@@ -37,8 +37,8 @@ Given I have an apikey
 And an apisecret
 And a username
 And a password
-When I request for any image to be downloaded
 And a pixel height
+When I request for any image to be downloaded
 Then the url for the image is returned
 And the url has the correct height
 
@@ -56,6 +56,6 @@ Given I have an apikey
 And an apisecret
 And a username
 And a password
-When I request for any image to be downloaded
 And I specify to auto download 
+When I request for any image to be downloaded
 Then an image is returned
