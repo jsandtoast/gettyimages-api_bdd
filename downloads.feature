@@ -26,6 +26,7 @@ And a password
 And I specify <value> file type
 When I request for any image to be downloaded
 Then the url for the image is returned
+And the url has the file type
 Examples:
 | value |
 | eps   |
