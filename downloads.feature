@@ -40,7 +40,6 @@ And a password
 And a pixel height
 When I request for any image to be downloaded
 Then the url for the image is returned
-And the url has the correct height
 
 Scenario: Download largest image 
 Given I have an apikey
@@ -49,4 +48,3 @@ And a username
 And a password
 When I request for any image to be downloaded
 Then the url for the image is returned
-And the url will return the largest image
