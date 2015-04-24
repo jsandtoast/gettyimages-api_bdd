@@ -50,12 +50,3 @@ And a password
 When I request for any image to be downloaded
 Then the url for the image is returned
 And the url will return the largest image
-
-Scenario: Download image  
-Given I have an apikey
-And an apisecret
-And a username
-And a password
-And I specify to auto download 
-When I request for any image to be downloaded
-Then an image is returned
