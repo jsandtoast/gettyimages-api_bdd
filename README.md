@@ -1,4 +1,4 @@
-# Connect SDK BDD Scenarios
+# Getty Images API SDK BDD Scenarios
 
 These scenarios define the types of system interactions or behaviors that the sdk should provide
 
