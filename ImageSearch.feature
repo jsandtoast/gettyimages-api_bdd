@@ -366,8 +366,6 @@ Examples:
 | editorialsubscription   |
 | premiumaccess           |
 | easyaccess              |
-| royaltyfreesubscription |
-| imagepack               |
 
 Scenario: Search for prestige images
 Given I have an apikey
