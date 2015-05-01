@@ -1,4 +1,3 @@
-@acceptance.FirstRelease
 Feature: Authorization
 	In order to perform operations against the api
 	as a developer consuming the sdk

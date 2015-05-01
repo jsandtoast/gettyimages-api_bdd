@@ -1,4 +1,3 @@
-@acceptance.FirstRelease
 Feature: Image Details
   To create a rockin website with sweet images
   As a developer that wants to get some image details

@@ -1,4 +1,3 @@
-@acceptance.FirstRelease
 Feature: Search Results Paging
   To be able to use more than just the first set of results from search
   As a developer that wants to page through the result set

@@ -1,4 +1,3 @@
-@acceptance.FirstRelease
 Feature: Search for Images
   To create a rockin website with sweet images
   As a developer that wants to expose images to resell

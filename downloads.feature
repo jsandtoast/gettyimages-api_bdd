@@ -1,4 +1,3 @@
-@acceptance.FirstRelease
 Feature: Downloads
   In order to serve image content on my site
   as a developer consuming the sdk
