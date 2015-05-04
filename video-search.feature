@@ -4,6 +4,7 @@ Scenario Outline: SDK client performs video searches
 Given an api key
 And an api secret
 And a <searchtype> video search
+And a search phrase
 When the video search is executed
 Then the status is success
 And video search results are returned
@@ -14,17 +15,17 @@ Examples:
 | creative   |
 | editorial  |
 
-Scenario: SDK client can specify a largest downloads field on video search
+Scenario: SDK client can specify the largest downloads field on video search
 Given an api key
 And an api secret
 And a user name
 And a user password
 And a blended video search
-And largest downloads field is specified
+And largest_downloads field is specified
 When the video search is executed
 Then the status is success
 And video search results are returned
-And the largest download field is returned
+And the largest_download field is returned
 
 Scenario: SDK client can specify age of people filter on video search
 Given an api key
@@ -65,6 +66,8 @@ And video search results are returned
 Scenario: SDK client can specify product type filter on video search
 Given an api key
 And an api secret
+And a user name
+And a user password
 And a blended video search
 And product type filter is specified
 When the video search is executed
