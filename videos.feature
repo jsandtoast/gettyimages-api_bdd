@@ -1,4 +1,4 @@
-﻿Feature: SDK client can get video metadata
+Feature: SDK client can get video metadata
 	As a consumer of the SDK
 	I want to get video metadata
 	So I can use the metadata in my application
@@ -40,3 +40,4 @@ Scenario: SDK client throws an exception when a video is not found
 	When the video metadata request is executed
 	Then an exception is thrown
 	And the exception explains that the video was not found
+
