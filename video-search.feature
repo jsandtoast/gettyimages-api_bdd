@@ -1,4 +1,7 @@
-Feature: SDK client can search for videos.
+Feature: SDK client can search for videos
+	As a consumer of the SDK
+	I want to search for videos
+	So I can use the videos in my application
 
 Scenario Outline: SDK client performs video searches
 Given an api key
