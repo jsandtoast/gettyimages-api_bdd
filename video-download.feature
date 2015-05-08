@@ -1,4 +1,4 @@
-Feature: Video Downloads
+Feature: Video Download
   In order to serve video content on my site
   as a developer consuming the sdk
   I need to be able to download videos
@@ -7,7 +7,7 @@ Scenario: Attempt download with Client Credentials
 Given I have an apikey
 And an apisecret
 When I request for any video to be downloaded
-Then I receive an error
+Then I receive an exception
 And I receive not authorized message
 
 Scenario: Download video with Resource Owner credentials

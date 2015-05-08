@@ -1,4 +1,4 @@
-Feature: Downloads
+Feature: Image Download
   In order to serve image content on my site
   as a developer consuming the sdk
   I need to be able to download images

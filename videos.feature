@@ -1,4 +1,4 @@
-Feature: SDK client can get video metadata
+Feature: Video Metadata
 	As a consumer of the SDK
 	I want to get video metadata
 	So I can use the metadata in my application

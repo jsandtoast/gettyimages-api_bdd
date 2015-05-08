@@ -1,4 +1,4 @@
-Feature: SDK client can search for videos
+Feature: Search for Videos
 	As a consumer of the SDK
 	I want to search for videos
 	So I can use the videos in my application
