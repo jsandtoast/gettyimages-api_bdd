@@ -7,7 +7,7 @@ Scenario: Attempt download with Client Credentials
 Given I have an apikey
 And an apisecret
 When I request for any video to be downloaded
-Then I receive an error
+Then I receive an exception
 Then I receive not authorized message
 
 Scenario: Download video with Resource Owner credentials
