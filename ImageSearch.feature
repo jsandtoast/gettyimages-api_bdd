@@ -324,19 +324,6 @@ Examples:
 | editorial    |
 | creative     |
 
-Scenario Outline: Search for images by locations
-Given I have an apikey
-And an apisecret
-When I configure my search for <image family> images
-And I specify a location of <value>
-And I search for dog
-Then I get a response back that has my images
-Examples:
-| image family | value      |
-| blended      | california |
-| editorial    | chicago    |
-| creative     | seattle    |
-
 Scenario Outline: Search for images by number of people
 Given I have an apikey
 And an apisecret
