@@ -23,8 +23,8 @@ Scenario: Specify fields in image detail request
 	Given I have an apikey
 	And an apisecret
 	And I have an image id I want details on
-	And I specify field caption
-	And I specify field title
+	And I specify images field caption
+	And I specify images field title
 	When I retrieve image details
 	Then I get a response back that has my image details
 	And the response contains caption
