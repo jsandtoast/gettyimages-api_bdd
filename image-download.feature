@@ -22,7 +22,7 @@ Given I have an apikey
 And an apisecret
 And a username
 And a password
-And I specify <value> file type
+And I specify a file type of <value>
 When I request for any image to be downloaded
 Then the url for the image is returned
 And the url has a <value> file type
