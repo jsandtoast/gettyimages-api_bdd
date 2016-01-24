@@ -7,7 +7,7 @@ Scenario Outline: Creative Image Searching
   Given I have an apikey
   And an apisecret
   And I configure my search for creative images
-  And I search for <Phrase>
+  And I specify phrase <Phrase>
   And I specify <ItemCount> number of items per page
   And I want page <PageNum>
   When I retrieve the results
@@ -22,7 +22,7 @@ Scenario: Reuse request for multiple pages
 Given I have an apikey
 And an apisecret
 And I configure my search for creative images
-And I search for dog
+And I specify phrase dog
 When I retrieve page 1
 And I retrieve page 2
 Then the response has images
