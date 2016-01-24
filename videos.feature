@@ -4,7 +4,7 @@ Feature: Video Metadata
 	So I can use the metadata in my application
 
 Scenario: SDK client can get default metadata about a video
-	Given an api key
+	Given I have an apikey
 	And an api secret
 	And a video id
 	When the video metadata request is executed
@@ -12,7 +12,7 @@ Scenario: SDK client can get default metadata about a video
 	And the video metadata is returned
 
 Scenario: SDK client can specify a field when requesting video metadata
-	Given an api key
+	Given I have an apikey
 	And an api secret
 	And a user name
 	And a user password
@@ -24,7 +24,7 @@ Scenario: SDK client can specify a field when requesting video metadata
 	And the caption field is returned
 
 Scenario: SDK client can get default metadata about multiple videos
-	Given an api key
+	Given I have an apikey
 	And an api secret
 	And a list of video ids
 	When the video metadata request is executed
@@ -32,7 +32,7 @@ Scenario: SDK client can get default metadata about multiple videos
 	And a list of video metadata is returned
 
 Scenario: SDK client throws an exception when a video is not found
-	Given an api key
+	Given I have an apikey
 	And an api secret
 	And a user name
 	And a user password
