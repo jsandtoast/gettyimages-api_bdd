@@ -21,8 +21,8 @@ Examples:
 Scenario: SDK client can specify the largest downloads field on video search
   Given I have an apikey
   And an api secret
-  And a user name
-  And a user password
+  And a username
+  And a password
   And a blended video search
   And largest_downloads field is specified
   When the video search is executed
@@ -69,8 +69,8 @@ Scenario: SDK client can specify format filter on video search
 Scenario: SDK client can specify product type filter on video search
   Given I have an apikey
   And an api secret
-  And a user name
-  And a user password
+  And a username
+  And a password
   And a blended video search
   And product type filter is specified
   When the video search is executed
