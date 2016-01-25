@@ -111,5 +111,5 @@ And an api secret
 And a creative video search
 And license model filter is specified
 When the video search is executed
-Then the status is success
+Then the video search status is success
 And video search results are returned
