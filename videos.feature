@@ -14,8 +14,8 @@ Scenario: SDK client can get default metadata about a video
 Scenario: SDK client can specify a field when requesting video metadata
 	Given I have an apikey
 	And an api secret
-	And a user name
-	And a user password
+	And a username
+	And a password
 	And a video id
 	And caption field is specified
 	When the video metadata request is executed
@@ -34,10 +34,10 @@ Scenario: SDK client can get default metadata about multiple videos
 Scenario: SDK client throws an exception when a video is not found
 	Given I have an apikey
 	And an api secret
-	And a user name
-	And a user password
+	And a username
+	And a password
 	And a non-existent video id
 	When the video metadata request is executed
-	Then an exception is thrown
-	And the exception explains that the video was not found
+	Then an error is returned
+	And the error explains that the video was not found
 

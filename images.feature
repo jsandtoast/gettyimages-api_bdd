@@ -36,3 +36,13 @@ Scenario: Specify multiple ids in batch image detail request
 	And I have a list of image ids I want details on
 	When I retrieve details for the images
 	Then I get a response back that has details for multiple images
+
+Scenario: SDK client throws an exception when an image is not found
+	Given I have an apikey
+	And an api secret
+	And a username
+	And a password
+	And a non-existent image id
+	When I retrieve image details
+	Then an error is returned
+	And the error explains that the image was not found
