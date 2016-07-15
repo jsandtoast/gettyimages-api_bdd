@@ -7,7 +7,7 @@ Scenario: Attempt download with Client Credentials
 Given I have an apikey
 And an apisecret
 When I request for any image to be downloaded
-Then I receive an error
+Then the url for the image is returned
 
 Scenario: Download image with Resource Owner credentials
 Given I have an apikey
