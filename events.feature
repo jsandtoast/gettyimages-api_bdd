@@ -28,9 +28,9 @@ Scenario: Specify fields in Events Request
 	And I specify field hero_image
 	When I retrieve event details
 	Then I get a response back that has my event
-	And the response contains id
-	And the response contains name
-	And the response contains hero_image
+	And the response contains the id property
+	And the response contains the name property
+	And the response contains the hero_image property
 
 Scenario: Specify multiple ids in batch image detail request
 	Given I have an apikey

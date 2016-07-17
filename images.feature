@@ -27,8 +27,8 @@ Scenario: Specify fields in image detail request
 	And I specify images field title
 	When I retrieve image details
 	Then I get a response back that has my image details
-	And the response contains caption
-	And the response contains title
+	And the response contains the caption property
+	And the response contains the title property
 
 Scenario: Specify multiple ids in batch image detail request
 	Given I have an apikey

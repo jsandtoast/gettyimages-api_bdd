@@ -9,7 +9,8 @@ Scenario: Retrieve a user's products list using their credentials
 	And a username
 	And a password
 	When I retrieve products
-	Then I get a response back that has the user's product list
+	Then I receive a successful response
+	And the response contains the user's product list
 
     Scenario: Retrieve products without specifying user credentials
     Given I have an apikey
@@ -25,5 +26,6 @@ Scenario: Specify fields in product request
 	And a password
 	And I specify product field download_requirements
 	When I retrieve products
-	Then I get a response back that has the user's product list
+	Then I receive a successful response
+	And the response contains the user's product list
 	And the response contains download_requirements
