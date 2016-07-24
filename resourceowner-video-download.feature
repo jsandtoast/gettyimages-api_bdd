@@ -1,15 +1,9 @@
-Feature: Video Download
+Feature: Video Download with Resource Owner Credentials
   In order to serve video content on my site
   as a developer consuming the sdk
   I need to be able to download videos
 
-Scenario: Attempt download with Client Credentials
-Given I have an apikey
-And an apisecret
-When I request for any video to be downloaded
-Then the url for the video is returned
-
-Scenario: Download video with Resource Owner credentials
+Scenario: Download video succeeds
 Given I have an apikey
 And an apisecret
 And a username

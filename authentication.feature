@@ -1,4 +1,4 @@
-Feature: Authorization
+Feature: Authentication
 	In order to perform operations against the api
 	as a developer consuming the sdk
 	I need to be able to authenticate
